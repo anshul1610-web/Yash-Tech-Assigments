@@ -1,0 +1,55 @@
+public interface Calculation
+{
+    double calculateSimpleIntrest(double Principle,double Rate,double Time);
+    double calculateCompoundIntrest(double Principle,double Rate,double Time);
+	 
+}
+import java.util.Scanner;
+
+public class CalculateCIandPi implements Calculation
+{
+	
+	 double SI=0;
+	 double CI=0;
+	
+	@override
+	public double calculateSimpleIntrest(double Principle,double Rate,double Time) 
+	  {
+		SI= (Principle*Rate*Time)/100;
+		return SI;
+	  }
+
+	@Override
+	public double calculateCompoundIntrest(double Principle,double Rate,double Time) 
+	  {
+		CI = Principle * Math.pow(1.0+Rate/100.0,Time);
+		return CI;
+	  }
+	
+	public static void main(String[] args) 
+	{
+		
+		CalculateCIandPi Obj = new CalculateCIandPi();
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter Principle to be Calculated");
+		double  Principle = sc.nextDouble();
+		System.out.println("Enter Rate to be Calculated");
+		double  Rate = sc.nextDouble();
+		System.out.println("Enter Time to be Calculated");
+		double  Time = sc.nextDouble();
+		
+		
+		
+		System.out.println("Simple Intrest :"+Obj.calculateSimpleIntrest(Principle,Rate,Time));
+		System.out.println("Compound Intrest :"+Obj.calculateCompoundIntrest(Principle,Rate,Time));
+		
+		
+
+	}
+
+	
+
+	
+
+}
