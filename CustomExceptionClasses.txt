@@ -1,0 +1,39 @@
+
+
+<<<<<<<<<<<<<Custom Exception Handling For Stock Management System>>>>>>>>>>
+
+
+--- OutOfStockException
+--- NotDeliveredException
+--- productNotFoundExcepton
+--- InvalidPinCodeException
+--- CouponCodeExpiredExcetion
+--- PaymentFailedException
+--- ServiceNotFoundException
+--- UserNotFoundException
+--- InvalidUserNameException
+
+
+<<<<<<<<<<<<<Custom Exception Handling For library Management System>>>>>>>>>>
+
+
+--- BookNotFoundException
+--- BookNotAvailableException
+--- ToolargeRequestException
+--- PaymentFailedException
+--- ProcessCancelationException
+--- AlreadyAllotedException
+--- UserNotFoundException
+--- InvalidUserNameException
+--- TimeExceedException
+
+
+<<<<<<<<<<<<<Custom Exception Handling For Inventory Management System>>>>>>>>>>
+
+--- ProductNotFoundException
+--- CanNotResellException
+--- OutOfStockException
+--- UserUndefinedEception
+--- DataNotFoundException
+--- CanNotProcessRequestException
+--- PaymentFailedException
